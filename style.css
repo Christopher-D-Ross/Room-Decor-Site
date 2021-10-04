@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    margin-bottom: 40px;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+
+p {
+    margin-bottom: 40px;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+
+h3 {
+    margin-left: 40px;
+    display: inline-block;
+    margin-right: 40px;
+    letter-spacing: 10px;
+}
+
+.shoprow {
+    margin-bottom: 80px;
+}
+
+
+:root {
+    --Dark-Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+.hero1 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items:center;
+    height: 534px;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.navbar img {
+    height: 20px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 30px;
+    color: var(--White);
+}
+
+.hero2 {
+    display: none;
+}
+
+.hero3 {
+    display: none;
+}
+
+.arrows {
+    display: flex;
+    width: 120px;
+    background-color: black;
+    position: relative;
+    top: 53px;
+    right: 24px;
+}
+
+.arrowleft {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.arrowleft:hover {
+    background-color: var(--Very-Dark-Gray);
+}
+
+.arrowright {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.arrowright:hover {
+    background-color: var(--Very-Dark-Gray);
+}
+
+.about {
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    align-items: center;
+}
+
+.about h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about img {
+}
