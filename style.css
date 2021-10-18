@@ -9,27 +9,27 @@ html {
 }
 
 h1 {
-    margin-bottom: 40px;
-    margin-right: 60px;
-    margin-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
 }
 
 p {
-    margin-bottom: 40px;
-    margin-right: 60px;
-    margin-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
     color:var(--Dark-Gray);
 }
 
 h3 {
-    margin-left: 40px;
+    padding-left: 40px;
     display: inline-block;
-    margin-right: 40px;
+    padding-right: 40px;
     letter-spacing: 10px;
 }
 
 .shoprow {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 
@@ -42,6 +42,7 @@ h3 {
 
 .hero1 {
     display: grid;
+    /* display: none; */
     grid-template-columns: 3fr 2fr;
     align-items:center;
     height: 534px;
@@ -59,14 +60,19 @@ h3 {
 }
 
 li {
-    display: inline-block;
-    margin-left: 30px;
+    display: inline;
+    padding-left: 30px;
     color: var(--White);
     cursor: pointer;
 }
 
 li:hover {
     text-decoration: underline white;
+}
+
+.baseimg {
+    height: 534px;
+    width: auto;
 }
 
 .hero2 {
@@ -85,25 +91,32 @@ li:hover {
     height: 534px;
 }
 
-.arrows {
-    display: flex;
-    width: 144px;
-    background-color: black;
-    position: relative;
-    top: 53px;
-    right: 24px;
+.hero3 .arrows {
+    margin-top: 115px;
+    height: 60px;
 }
 
-.hero2 .arrows {
-    top: 63px;
+.hero3 .shoprow {
+    padding-bottom: 62.5px;
 }
+
+.arrows {
+    display: flex;
+    height: 60px;
+    width: 144px;
+    background-color: black;
+    /* position: relative; */
+    margin-top: 115px;
+    margin-right: 460px;
+}
+
 
 .arrowleft {
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 60px;
     width: 72px;
     cursor: pointer;
 }
@@ -117,7 +130,7 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 60px;
     width: 72px;
     cursor: pointer;
 }
@@ -127,11 +140,16 @@ li:hover {
 }
 
 .about {
-    height: 276px;
-    display: grid;
-    grid-template-columns: 2fr 4fr 2fr;
-    align-items: center;
+    height: 270px;
+    display: flex;
+
+    /* grid-template-columns: 2fr 4fr 2fr; */
+    /* align-items: center; */
     /* align-content: stretch; */
+}
+
+.aboutpara {
+    width: auto;
 }
 
 .about h3 {
@@ -140,6 +158,67 @@ li:hover {
 }
 
 .stub {
-    height: 276px;
+    height: auto;
+    width: auto;
 }
 
+@media screen and (max-width:600px) {
+    .hero1 {
+        display: grid;
+        /* display:none; */
+        height: 700px;
+        width: 375px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hero2 {
+        display: grid;
+        display: none;
+        height: 700px;
+        width: 375px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hero3 {
+        display: grid;
+        display: none;
+        height: 700px;
+        width: 375px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hero3 .arrows {
+        top: 200px;
+    }
+
+    .baseimg {
+        height: 375px;
+        width: auto;
+    }
+
+    .arrows {
+        display: flex;
+        height: 60px;
+        width: 144px;
+        background-color: black;
+        position: absolute;
+        margin-top: 0px;
+        margin-right: 0px;
+        top: 314px;
+        right: 0px;
+    }
+
+    .decorinfo {
+        padding-bottom: 200px;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 375px;
+    }
+
+    .stub {}
+}
