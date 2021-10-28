@@ -103,7 +103,7 @@ li:hover {
 .arrows {
     display: flex;
     height: 60px;
-    width: 144px;
+    width: 158px;
     background-color: black;
     /* position: relative; */
     margin-top: 115px;
@@ -117,7 +117,7 @@ li:hover {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 72px;
+    width: 79px;
     cursor: pointer;
 }
 
@@ -131,7 +131,7 @@ li:hover {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 72px;
+    width: 79px;
     cursor: pointer;
 }
 
@@ -160,6 +160,11 @@ li:hover {
 .stub {
     height: auto;
     width: auto;
+}
+
+.totheright:hover {
+    cursor: pointer;
+    opacity: .30;
 }
 
 @media screen and (max-width:600px) {
@@ -196,7 +201,7 @@ li:hover {
 
     .baseimg {
         height: 375px;
-        width: auto;
+        width: 104vw;
     }
 
     .arrows {
@@ -218,6 +223,10 @@ li:hover {
     .about {
         flex-direction: column;
         width: 375px;
+    }
+
+    .stub {
+        width: 104vw;
     }
 
 }
